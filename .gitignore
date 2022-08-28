@@ -8,3 +8,7 @@ rest/.#markets.txt
 *.txt#
 
 *.py~
+
+rest/authent.data~
+
+rest/authent.data
