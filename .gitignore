@@ -12,3 +12,7 @@ rest/.#markets.txt
 rest/authent.data~
 
 rest/authent.data
+
+*.log
+
+websocket/authent.data
