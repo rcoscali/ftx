@@ -1,2 +1,10 @@
 *__pycache__*
 .idea*
+
+rest/.#markets.txt
+
+*.py#
+
+*.txt#
+
+*.py~

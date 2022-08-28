@@ -11,11 +11,14 @@ from ciso8601 import parse_datetime
 class FtxClient:
     _ENDPOINT = 'https://ftx.com/api/'
 
-    def __init__(self, api_key=None, api_secret=None, subaccount_name=None) -> None:
+    def __init__(self, api_key, api_secret, subaccount_name) -> None:
         self._session = Session()
         self._api_key = api_key
         self._api_secret = api_secret
         self._subaccount_name = subaccount_name
+
+#    def __init__(self) -> None:
+#        __init__(self, 'ibmjTTz6t2vOwxC2_HO8Y3Agu0XU5u9bWHKAL4-d', 'ChhqNybMGvX4AbQJ8t9x-fg0w571A-Y-g_nGv3bp', 'napbots')
 
     def _get(self, path: str, params: Optional[Dict[str, Any]] = None) -> Any:
         return self._request('GET', path, params=params)
